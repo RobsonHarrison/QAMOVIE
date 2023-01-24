@@ -22,3 +22,10 @@ console.log(nameValidation("12345678912346"));
 //        : !re.test(fName)? ""
 //     : "ok";
 //     }
+function quickDemo () {
+  let paragraphText = document.querySelector("#demo").innerHTML;
+  console.log(paragraphText);
+  document.querySelector("#demo").innerHTML = "Robson was here";
+  let paragraphs = document.querySelectorAll("p");
+  console.log(paragraphs);
+}
