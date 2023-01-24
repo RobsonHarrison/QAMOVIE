@@ -4,6 +4,8 @@ const email = document.querySelector("#email");
 
 const form = document.querySelector("#signup");
 
+
+
 // check first name
 const checkFirstName = () => {
 	let valid = false;
@@ -79,7 +81,13 @@ const isBetween = (length, min, max) =>
 const showError = (input, message) => {
 	// get the form-field element
 	const formField = input.parentElement;
+	const firstNameField = document.getElementById('firstname');
+	const lastNameField = document.getElementById('lastname');
+	const emailField = document.getElementById('email');
 	// add the error class
+	firstNameField.classList.add("errorinput");
+	lastNameField.classList.add("errorinput");
+	emailField.classList.add("errorinput");
 	formField.classList.remove("success");
 	formField.classList.add("error");
 
@@ -92,8 +100,13 @@ const showError = (input, message) => {
 const showSuccess = (input) => {
 	// get the form-field element
 	const formField = input.parentElement;
-
+	const firstNameField = document.getElementById('firstname');
+	const lastNameField = document.getElementById('lastname');
+	const emailField = document.getElementById('email');
 	// remove the error class
+	firstNameField.classList.remove("errorinput");
+	lastNameField.classList.remove("errorinput");
+	emailField.classList.remove("errorinput");
 	formField.classList.remove("error");
 	formField.classList.add("success");
 
