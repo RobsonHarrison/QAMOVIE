@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cinema | Schedule</title>
-     <!--Bootstrap css-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <link rel="stylesheet" href="CSS/styles.css">
-</head>
-<body>
+    <!--Bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <img class="navbar-brand" src="IMAGES/navbrand.jpeg" alt="" width="40" height="40">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link" href="index.html">Home</a>
-                      <a class="nav-link active" href="schedule.html">Schedule</a>
-                      <a class="nav-link" href="signup.html">Signup</a>
-                    </div>
-                  </div>
-
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img
+            class="navbar-brand"
+            src="IMAGES/navbrand.jpeg"
+            alt=""
+            width="40"
+            height="40"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" href="schedule.html">Schedule</a>
+              <a class="nav-link" href="signup.html">Signup</a>
             </div>
-          </nav>
+          </div>
+        </div>
+      </nav>
     </div>
     <!--Navigation end-->
-     
 
-     <!-- table one - opening times -->
-     
-  <h2> Opening Times</h2>
+    <!-- table one - opening times -->
 
-     <!--clock icon-->
+    <h2>Opening Times</h2>
 
-  <svg viewBox="0 0 24 24" class="clock-icon">
-    <path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" />
-  </svg>
+    <!--clock icon-->
 
-  <div>
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Days</th>
-        <th scope="col">Times</th>
-     
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Monday - Thursday</th>
-        <td>16:30 - 21:00</td>
-      
-      </tr>
-      <tr>
-        <th scope="row">Friday - Saturday</th>
-        <td>16:30 - 22:00</td>
-        
-        
-      </tr>
-      <tr>
-        <th scope="row">Sunday</th>
-        <td>16:00 - 21:30</td>
-       
-      </tr>
-    </tbody>
-  </table>
-</div>
+    <svg viewBox="0 0 24 24" class="clock-icon">
+      <path
+        d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"
+      />
+    </svg>
 
+    <div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Days</th>
+            <th scope="col">Times</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Monday - Thursday</th>
+            <td>16:30 - 21:00</td>
+          </tr>
+          <tr>
+            <th scope="row">Friday - Saturday</th>
+            <td>16:30 - 22:00</td>
+          </tr>
+          <tr>
+            <th scope="row">Sunday</th>
+            <td>16:00 - 21:30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-  <!-- table two - what's on -->
-<div>
-  <h2> What's On</h2>
+    <!-- table two - what's on -->
+    <div>
+      <h2>What's On</h2>
 
-  <!-- film reel icon-->
+      <!-- film reel icon-->
 
-  <svg viewBox="0 0 24 24" class="film-reel-icon">
-    <path d="M18,14V20C18,21.11 17.11,22 16,22H4C2.9,22 2,21.1 2,20V14C2,12.9 2.9,12 4,12H16C17.11,12 18,12.9 18,14M7,14C5.9,14 5,13.1 5,12C5,10.9 5.9,10 7,10C8.1,10 9,10.9 9,12C9,13.1 8.1,14 7,14M15,14C13.9,14 13,13.1 13,12C13,10.9 13.9,10 15,10C16.1,10 17,10.9 17,12C17,13.1 16.1,14 15,14M16.5,4C17.88,4 19,5.12 19,6.5C19,7.88 17.88,9 16.5,9C15.12,9 14,7.88 14,6.5C14,5.12 15.12,4 16.5,4M7.5,4C8.88,4 10,5.12 10,6.5C10,7.88 8.88,9 7.5,9C6.12,9 5,7.88 5,6.5C5,5.12 6.12,4 7.5,5M4,9C5.66,9 7,10.34 7,12C7,13.66 5.66,15 4,15C2.34,15 1,13.66 1,12C1,10.34 2.34,9 4,9Z" />
-  </svg>
+      <svg viewBox="0 0 24 24" class="tv-icon">
+        <path
+          d="M21,17H3V5H21M21,3H3C1.9,3 1,3.9 1,5V17C1,18.1 1.9,19 3,19H8V21H16V19H21C22.1,19 23,18.1 23,17V5C23,3.9 22.1,3 21,3Z"
+        />
+      </svg>
 
-    <table class="table">
+      <table class="table">
         <thead>
           <tr>
             <th scope="col">Movie Title</th>
@@ -96,22 +111,19 @@
             <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>
-         
           </tr>
           <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
             <td>Thornton</td>
-  
           </tr>
           <tr>
             <th scope="row">3</th>
             <td>Larry</td>
             <td>the Bird</td>
-   
           </tr>
         </tbody>
       </table>
-</div>
-</body>
+    </div>
+  </body>
 </html>

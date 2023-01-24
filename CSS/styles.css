@@ -4,9 +4,16 @@
   }
 
 
-  .film-reel-icon {
+.tv-icon {
     width: 40x;
     height: 40px;
-  }
- 
+}
+
+
+body {
+  background: linear-gradient(to bottom, #e1691f, #861ba9);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
   

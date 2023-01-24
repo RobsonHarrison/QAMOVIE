@@ -1,89 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <!--Bootstrap css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <div class="row" id="myHeader">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <img class="navbar-brand" src="IMAGES/navbrand.jpeg" alt="" width="40" height="40">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active" href="index.html">Home</a>
-                      <a class="nav-link" href="schedule.html">Schedule</a>
-                      <a class="nav-link" href="signup.html">Signup</a>
-                    </div>
-                  </div>
-
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img
+            class="navbar-brand"
+            src="IMAGES/navbrand.jpeg"
+            alt=""
+            width="40"
+            height="40"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="schedule.html">Schedule</a>
+              <a class="nav-link" href="signup.html">Signup</a>
             </div>
-          </nav>
+          </div>
+        </div>
+      </nav>
     </div>
     <!--Navigation end-->
 
-    <section>
-        <!-- Image could become a carousel-->
-        <img src="IMAGES/cinema1.jpg"  alt="cinema image"/>
-    </section>
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="IMAGES/cinema1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="IMAGES/cinema2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="IMAGES/cinema3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--Carousel end-->
 
     <article>
-        <!-- text article to become welcome message -->
-        <div class="row">
-            <div class="column">
-                <h2>QA cinema's</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolorem, quia deleniti architecto dolores laboriosam similique possimus ipsum molestias impedit, eveniet officia error mollitia eligendi velit neque! Doloremque, accusamus reiciendis?</p>
-            </div>
+      <!-- text article to become welcome message -->
+      <div class="row">
+        <div class="column">
+          <h2>QA cinema's</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            dolorem, quia deleniti architecto dolores laboriosam similique
+            possimus ipsum molestias impedit, eveniet officia error mollitia
+            eligendi velit neque! Doloremque, accusamus reiciendis?
+          </p>
         </div>
+      </div>
     </article>
 
     <section>
-        <!-- top 3 images for latest movies -->
-        <div>
-            <div class="col-sm-4">
-                <img src="" class="img-thumbnail" alt=""/>
-            </div>
-            <div class="col-sm-4">
-                <img src="" class="img-thumbnail" alt=""/>
-            </div>
-            <div class="col-sm-4">
-                <img src="" class="img-thumbnail" alt=""/>
-            </div>
+      <!-- top 3 images for latest movies -->
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="IMAGES/Avatar2.jpg"
+            class="img-thumbnail"
+            alt=" Avatar 2 poster"
+          />
         </div>
+        <div class="col-sm-4">
+          <img
+            src="IMAGES/AntMan2.jpg"
+            class="img-thumbnail"
+            alt="Ant Man 2 poster"
+          />
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="IMAGES/dungeons&dragons.jpg"
+            class="img-thumbnail"
+            alt="D&D poster"
+          />
+        </div>
+      </div>
     </section>
 
+    <br />
+
     <article>
-        <!-- description of each movie pic in column above -->
-        <div class="row">
-            <div class="col-sm-4">
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolorem, quia deleniti architecto dolores laboriosam similique possimus ipsum molestias impedit, eveniet officia error mollitia eligendi velit neque! Doloremque, accusamus reiciendis?</p>
-            </div>
-            <div class="col-sm-4">
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolorem, quia deleniti architecto dolores laboriosam similique possimus ipsum molestias impedit, eveniet officia error mollitia eligendi velit neque! Doloremque, accusamus reiciendis?</p>
-            </div>
-            <div class="col-sm-4">
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolorem, quia deleniti architecto dolores laboriosam similique possimus ipsum molestias impedit, eveniet officia error mollitia eligendi velit neque! Doloremque, accusamus reiciendis?</p>
-            </div>
+      <!-- description of each movie pic in column above -->
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>AVATAR: THE WAY OF WATER</h2>
+          <br />
+          <h3>DIRECTORS</h3>
+          <p>James Cameron</p>
+          <h3>CAST</h3>
+          <p>
+            Kate Winslet, Giovanni Ribisi, Stephen Lang, Cliff Curtis, Sam
+            Worthington, Oona Chaplin, Edie Falco, Joel David Moore, Sigourney
+            Weaver, David Thewlis, Zoe Saldana
+          </p>
+          <h3>SYNOPSIS</h3>
+          <p>
+            Experience the once-in-a-generation movie event, exclusively in
+            cinemas. Set more than a decade after the events of the first film,
+            AVATAR 2 begins to tell the story of the Sully family (Jake,
+            Neytiri, and their kids), the trouble that follows them, the lengths
+            they go to keep each other safe, the battles they fight to stay
+            alive and the tragedies they endure. The latest in the
+            groundbreaking fantasy saga from director James Cameron.
+          </p>
         </div>
+        <div class="col-sm-4">
+          <h2>Ant-Man and The Wasp: Quantumania</h2>
+          <br />
+          <h3>DIRECTORS</h3>
+          <p>Peyton Reed</p>
+          <h3>CAST</h3>
+          <p>
+            Kathryn Newton, Michael Douglas, Evangeline Lilly, Katy O'Brian,
+            Michelle Pfeiffer, Bill Murray, Jonathan Majors, William Jackson
+            Harper, Paul Rudd, David Dastmalchian
+          </p>
+          <h3>SYNOPSIS</h3>
+          <p>
+            Superhero partners Scott Lang (Paul Rudd) and Hope Van Dyne
+            (Evangeline Lilly) return to continue their adventures as Ant-Man
+            and the Wasp. Together, with Hope’s parents Hank Pym (Michael
+            Douglas) and Janet Van Dyne (Michelle Pfeiffer), and Scott’s
+            daughter Cassie Lang (Kathryn Newton), the family finds themselves
+            exploring the Quantum Realm, interacting with strange new creatures
+            and embarking on an adventure that will push them beyond the limits
+            of what they thought possible. ANT-MAN AND THE WASP: QUANTUMANIA
+            contains several sequences with flashing lights that may affect
+            those who are susceptible to photosensitive epilepsy or have other
+            photosensitivities.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h2>Dungeons & Dragons: Honor Among Thieves</h2>
+          <br />
+          <h3>DIRECTORS</h3>
+          <p>John Francis Daley, Jonathan Goldstein</p>
+          <h3>CAST</h3>
+          <p>
+            Chloe Coleman, Regé-Jean Page, Sophia Lillis, Daisy Head, Justice
+            Smith, Hugh Grant, Michelle Rodriguez, Chris Pine
+          </p>
+          <h3>SYNOPSIS</h3>
+          <p>
+            A charming thief and a band of unlikely adventurers undertake an
+            epic heist to retrieve a lost relic, but things go dangerously awry
+            when they run afoul of the wrong people. Dungeons & Dragons: Honour
+            Among Thieves brings the rich world and playful spirit of the
+            legendary role-playing game to the big screen in a hilarious and
+            action-packed adventure.
+          </p>
+        </div>
+      </div>
     </article>
 
     <footer>
-        <!-- hyperlinks to each page -->
+      <!-- hyperlinks to each page -->
     </footer>
 
-<!-- Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    <
-</body>
+    <!-- Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
