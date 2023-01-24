@@ -16,4 +16,21 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
 }
-  
+
+.glow {
+  font-size: 36px;
+  text-shadow: 0 0 px #fff;
+  animation: glow 0.5s linear infinite alternate;
+}
+
+@keyframes glow {
+  from {
+      text-shadow: 0 0 10px #fff;
+  }
+  to {
+      text-shadow: 0 0 20px #fff;
+  }
+}
+
+
+
